@@ -1,5 +1,5 @@
 {
-  "name": "Brooke Nagy",
+  "name": "LIGHTBNB",
   "version": "1.0.0",
   "description": "A simple multi-page Airbnb clone that uses a server-side Javascript to display the information from queries to web pages via SQL queries.",
   "main": "index.js",
