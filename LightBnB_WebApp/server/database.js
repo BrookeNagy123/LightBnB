@@ -21,10 +21,10 @@ const getUserWithEmail = function(email) {
   return pool
     .query(`SELECT * FROM users WHERE email = $1`, [email])
     .then((result) => {
-      if (result === []) {
-        return null;
-      } else {
+      if (result.rows.length) {
         return result.rows[0];
+      } else {
+        return null;
       }
     })
     .catch((err) => {
@@ -178,19 +178,3 @@ const addProperty = function(property) {
 };
 
 exports.addProperty = addProperty;
-
-
-//   title: string,
-//   description: string,
-//   thumbnail_photo_url: string,
-//   cover_photo_url: string,
-//   cost_per_night: string,
-//   street: string,
-//   city: string,
-//   province: string,
-//   post_code: string,
-//   country: string,
-//   parking_spaces: int,
-//   number_of_bathrooms: int,
-//   number_of_bedrooms: int
-// }
