@@ -3,19 +3,19 @@
 A simple multi-page Airbnb clone that users a server-side Javascript to display the information from queries to web pages via SQL queries. 
 
 # Getting Started 
-Create a new repository using this repository as a template.
-Clone your repository onto your local device.
-Install dependencies using the npm install command.
-Start the web server using the npm run local command. 
-Go to http://localhost:3000
+1. Create a new repository using this repository as a template.
+2. Clone your repository onto your local device.
+3. Install dependencies using the npm install command.
+4. Start the web server using the npm run local command. 
+5. Go to http://localhost:3000
 
 # Dependencies
-Express
-Cookie-Session
-Body-Parser
-Bcyrpt
-Nodemon
-PG
+- Express
+- Cookie-Session
+- Body-Parser
+- Bcyrpt
+- Nodemon 
+- PG
 
 ## Project Structure
 
