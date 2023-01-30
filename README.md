@@ -9,6 +9,8 @@ A simple multi-page Airbnb clone that users a server-side Javascript to display 
 4. Start the web server using the npm run local command. 
 5. Go to http://localhost:3000
 
+!["Search Results"](https://github.com/BrookeNagy123/LightBnB/blob/main/screenshots/Search%20Results.png?raw=true)
+
 # Dependencies
 - Express
 - Cookie-Session
@@ -60,4 +62,4 @@ A simple multi-page Airbnb clone that users a server-side Javascript to display 
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
 
 
-  !["Search Results"](https://github.com/BrookeNagy123/LightBnB/blob/main/screenshots/Search%20Results.png?raw=true)
+  
