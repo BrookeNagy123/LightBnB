@@ -126,12 +126,14 @@ const getAllProperties = (options, limit = 10) => {
   }
 
   if (options.minimum_price_per_night) {
-    queryParams.push(`${options.minimum_price_per_night}`);
+    // Convert minimum_price_per_night to a dollar value from cents by multiplying by 100
+    queryParams.push(`${options.minimum_price_per_night * 100}`);
     queryString += `AND cost_per_night >= $${queryParams.length}`;
   }
 
   if (options.maximum_price_per_night) {
-    queryParams.push(`${options.maximum_price_per_night}`);
+    // Convert maximum_price_per_night to a dollar value from cents by multiplying by 100 
+    queryParams.push(`${options.maximum_price_per_night * 100}`);
     queryString += `AND cost_per_night <= $${queryParams.length}`;
   }
 
@@ -148,6 +150,8 @@ const getAllProperties = (options, limit = 10) => {
   ORDER BY cost_per_night
   LIMIT $${queryParams.length};
   `;
+
+  console.log(queryString, queryParams)
 
   return pool.query(queryString, queryParams)
     .then((result) => {
