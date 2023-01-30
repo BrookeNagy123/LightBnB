@@ -58,3 +58,6 @@ A simple multi-page Airbnb clone that users a server-side Javascript to display 
   * `apiRoutes.js` and `userRoutes.js` are responsible for any HTTP requests to `/users/something` or `/api/something`. 
   * `json` is a directory that contains a bunch of dummy data in `.json` files.
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
+
+
+  !["Search Results"](https://github.com/BrookeNagy123/LightBnB/blob/main/screenshots/Search%20Results.png?raw=true)
